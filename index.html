@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML to PDF Generator</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container mt20">
+		<h1 class="page-header">HTML to PDF Generator</h1>
+		<h4 class="fw300">Start typing HTML in the box on the left and preview what it looks like in the box on the right. Click "Download PDF" when you are finished to export the HTML as a PDF file.</h4>
+
+		<hr>	
+
+		<div class="row">
+		<div class="col-lg-6 col-md-6">
+			Start typing HTML here:
+			<textarea id="html-input" rows="10" class="form-control"></textarea>
+			<button onclick="createPDF()" class="btn btn-danger mt20">Download PDF</button>
+		</div>
+
+		<div class="col-lg-6 col-md-6 mt20" id="right-col"></div>
+		</div>
+	</div>
+
+	<!-- Import jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/html2canvas.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.debug.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
